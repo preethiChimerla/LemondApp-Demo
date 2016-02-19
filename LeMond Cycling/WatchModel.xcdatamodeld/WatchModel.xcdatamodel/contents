@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="LeMondRide" representedClassName="WatchCoreDataProxy.LeMondRide" syncable="YES">
+        <attribute name="cadenceAverage" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cadencePeak" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="calories" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="date" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="heartRateAverage" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="heartRatePeak" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="metric" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" indexed="YES" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="saved" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="speedAverage" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="speedPeak" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="wattAverage" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="wattPeak" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="rideData" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LeMondRideData" inverseName="ride" inverseEntity="LeMondRideData" syncable="YES"/>
+    </entity>
+    <entity name="LeMondRideData" representedClassName="WatchCoreDataProxy.LeMondRideData" syncable="YES">
+        <attribute name="cadence" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="elevation" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="heartrate" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="power" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="ride" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LeMondRide" inverseName="rideData" inverseEntity="LeMondRide" syncable="YES"/>
+    </entity>
+    <entity name="LeMondTransport" syncable="YES">
+        <attribute name="cumulativeCalories" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentCadence" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentHeartrate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentPower" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentSpeed" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LeMondRide" positionX="-288" positionY="-72" width="144" height="283"/>
+        <element name="LeMondRideData" positionX="-45" positionY="-72" width="128" height="178"/>
+        <element name="LeMondTransport" positionX="-288" positionY="-261" width="144" height="120"/>
+    </elements>
+</model>

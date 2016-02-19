@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0"
+       lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic"
+       iOSVersion="Automatic">
+    <entity name="Authentication" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fullname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="validTill" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="RideData" syncable="YES">
+        <attribute name="speed" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Settings" syncable="YES">
+        <attribute name="bikeSize" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="bikeWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="bioBMI" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="bioHeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="bioSex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bioWeight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cadenceSensor" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="heartRateSensor" optional="YES" attributeType="Double" defaultValueString="0.0"
+                   syncable="YES"/>
+        <attribute name="imperial" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="metrics" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="powerSensor" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tireType" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wheelSize" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Authentication" positionX="-38" positionY="-27" width="128" height="118"/>
+        <element name="RideData" positionX="-225" positionY="-90" width="128" height="75"/>
+        <element name="Settings" positionX="-299" positionY="99" width="128" height="255"/>
+    </elements>
+</model>

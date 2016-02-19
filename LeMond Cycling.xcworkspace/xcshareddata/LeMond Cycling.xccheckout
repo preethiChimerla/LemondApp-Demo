@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>09497050-B3B1-400D-B608-6A3A1F75DA89</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LeMond Cycling</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C45F696432290364896F086479EB978E3C24D880</key>
+		<string>bitbucket.org:wegenern/lemond-cycling-app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LeMond Cycling.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C45F696432290364896F086479EB978E3C24D880</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:wegenern/lemond-cycling-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C45F696432290364896F086479EB978E3C24D880</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C45F696432290364896F086479EB978E3C24D880</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LeMond%20Cycling</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wln-Jc-E7A">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map Controller-->
+        <scene sceneID="4XG-tK-eJl">
+            <objects>
+                <viewController storyboardIdentifier="MapStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wln-Jc-E7A" customClass="MapController" customModule="LeMond_Cycling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F3a-No-wZb"/>
+                        <viewControllerLayoutGuide type="bottom" id="34B-HX-IeU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7V6-QI-k0o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nW7-Fq-loo">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jA5-BW-xtF" appends="YES" id="Xkm-Up-WYJ"/>
+                                    <outletCollection property="gestureRecognizers" destination="jcr-jx-unk" appends="YES" id="dME-1O-lZW"/>
+                                    <outletCollection property="gestureRecognizers" destination="DBs-8l-trh" appends="YES" id="wp3-50-5ca"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="nW7-Fq-loo" firstAttribute="top" secondItem="7V6-QI-k0o" secondAttribute="topMargin" id="9mz-1d-H99"/>
+                            <constraint firstItem="nW7-Fq-loo" firstAttribute="leading" secondItem="7V6-QI-k0o" secondAttribute="leadingMargin" id="Iyh-Ub-R55"/>
+                            <constraint firstItem="34B-HX-IeU" firstAttribute="top" secondItem="nW7-Fq-loo" secondAttribute="bottom" id="Oeo-xb-BzG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nW7-Fq-loo" secondAttribute="trailing" constant="-16" id="QTA-5P-fRb"/>
+                            <constraint firstItem="34B-HX-IeU" firstAttribute="top" secondItem="nW7-Fq-loo" secondAttribute="bottom" id="Tuy-GX-CU2"/>
+                            <constraint firstItem="nW7-Fq-loo" firstAttribute="leading" secondItem="7V6-QI-k0o" secondAttribute="leadingMargin" constant="-16" id="e2D-3N-2u6"/>
+                            <constraint firstItem="nW7-Fq-loo" firstAttribute="top" secondItem="7V6-QI-k0o" secondAttribute="topMargin" id="fPP-Ex-yUe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nW7-Fq-loo" secondAttribute="trailing" id="uxv-Yb-sr2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9mz-1d-H99"/>
+                                <exclude reference="Iyh-Ub-R55"/>
+                                <exclude reference="QTA-5P-fRb"/>
+                                <exclude reference="e2D-3N-2u6"/>
+                                <exclude reference="fPP-Ex-yUe"/>
+                                <exclude reference="uxv-Yb-sr2"/>
+                                <exclude reference="Oeo-xb-BzG"/>
+                                <exclude reference="Tuy-GX-CU2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="nW7-Fq-loo" id="B4J-s9-OR5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7V-b6-edf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer delaysTouchesEnded="NO" id="jcr-jx-unk">
+                    <connections>
+                        <action selector="handlePinch:" destination="wln-Jc-E7A" id="V6J-Gg-e6E"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer delaysTouchesEnded="NO" minimumNumberOfTouches="1" id="jA5-BW-xtF">
+                    <connections>
+                        <action selector="handlePan:" destination="wln-Jc-E7A" id="wi7-dw-lN7"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="MQR-OT-wsl"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="DBs-8l-trh">
+                    <connections>
+                        <action selector="addPin:" destination="wln-Jc-E7A" id="lnm-NY-JfS"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="383" y="362"/>
+        </scene>
+    </scenes>
+</document>

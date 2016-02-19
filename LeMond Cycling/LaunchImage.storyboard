@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="co8-00-mTN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zca-8J-oIl">
+            <objects>
+                <viewController id="co8-00-mTN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EWb-mK-2wZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oyy-Mq-Kol"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vso-Zy-MMH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login-background" translatesAutoresizingMaskIntoConstraints="NO" id="FPB-9e-CPS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Greg LeMond - White Logo" translatesAutoresizingMaskIntoConstraints="NO" id="q5j-gp-lAg">
+                                <rect key="frame" x="116" y="250" width="369" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="q5j-gp-lAg" firstAttribute="leading" secondItem="vso-Zy-MMH" secondAttribute="leadingMargin" constant="50" id="1Ej-Se-ikC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q5j-gp-lAg" secondAttribute="trailing" constant="50" id="2jp-Hf-gMA"/>
+                            <constraint firstAttribute="centerY" secondItem="q5j-gp-lAg" secondAttribute="centerY" id="fqE-uv-dAC"/>
+                            <constraint firstAttribute="centerX" secondItem="q5j-gp-lAg" secondAttribute="centerX" id="h36-P5-Z5l"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BhR-xz-5eF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="269"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Greg LeMond - White Logo" width="759" height="257"/>
+        <image name="login-background" width="959" height="1440"/>
+    </resources>
+</document>

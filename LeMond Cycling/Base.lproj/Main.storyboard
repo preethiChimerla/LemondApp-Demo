@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="j5f-jF-npb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pDU-gi-GqQ">
+            <objects>
+                <viewController storyboardIdentifier="viewController" id="iaw-Ac-eiJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zo7-CD-eSc"/>
+                        <viewControllerLayoutGuide type="bottom" id="A8f-Fv-Qpq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aJs-sL-AOV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DOz-p9-t17" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1127" y="-789"/>
+        </scene>
+        <!--Main Controller-->
+        <scene sceneID="oSw-S3-Egh">
+            <objects>
+                <viewController storyboardIdentifier="LeMondMain" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Ko-4M-rCA" customClass="MainController" customModule="LeMond_Cycling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mb9-3O-jgS"/>
+                        <viewControllerLayoutGuide type="bottom" id="His-tq-N4l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hj2-6B-NZ4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ycZ-fa-nbA"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <segue destination="kKA-h2-vgf" kind="show" identifier="SpeedTest" id="Xpz-K7-PDQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTw-tJ-3bf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242" y="161"/>
+        </scene>
+        <!--5 min Speed Test-->
+        <scene sceneID="p9P-wB-kX8">
+            <objects>
+                <viewController storyboardIdentifier="5mintest" title="5 min Speed Test" id="kKA-h2-vgf" customClass="SwiftPromptView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LLO-dv-pXW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wav-hV-Pxe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="5mintest" id="7Gt-EE-cb8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 MIN TEST " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5n-4p-r5n">
+                                <rect key="frame" x="252" y="290" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="w5n-4p-r5n" secondAttribute="centerX" id="4dw-I7-6Fn"/>
+                            <constraint firstItem="w5n-4p-r5n" firstAttribute="leading" secondItem="7Gt-EE-cb8" secondAttribute="leadingMargin" constant="200" id="9na-gY-d4f"/>
+                            <constraint firstAttribute="centerX" secondItem="w5n-4p-r5n" secondAttribute="centerX" id="Xtq-fH-LP6"/>
+                            <constraint firstAttribute="centerY" secondItem="w5n-4p-r5n" secondAttribute="centerY" id="Y6y-5K-TAf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="w5n-4p-r5n" secondAttribute="trailing" constant="200" id="deU-Yc-sy4"/>
+                            <constraint firstAttribute="centerY" secondItem="w5n-4p-r5n" secondAttribute="centerY" id="xQB-oH-ds6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9na-gY-d4f"/>
+                                <exclude reference="Xtq-fH-LP6"/>
+                                <exclude reference="Y6y-5K-TAf"/>
+                                <exclude reference="deU-Yc-sy4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdp-yP-d7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="933" y="161"/>
+        </scene>
+        <!--Main Navigation Controller-->
+        <scene sceneID="ucN-ma-adH">
+            <objects>
+                <navigationController storyboardIdentifier="MainNavigation" automaticallyAdjustsScrollViewInsets="NO" id="j5f-jF-npb" customClass="MainNavigationController" customModule="LeMond_Cycling" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z1D-VB-v0a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="cmd-t8-SF3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="4Ko-4M-rCA" kind="relationship" relationship="rootViewController" id="v4d-Rv-7cN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IcI-7R-PrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-450" y="161"/>
+        </scene>
+    </scenes>
+</document>
